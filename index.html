@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalVault - AI-Powered Calorie Tracker | Smart Nutrition App</title>
+    <meta name="description" content="Track calories instantly with AI. Snap a photo of your meal and get instant nutritional insights. Download CalVault - your smart nutrition companion.">
+    <meta name="keywords" content="calorie tracker, nutrition app, AI food scanner, diet app, meal tracking, health app">
+    <meta name="author" content="CalVault">
+    <link rel="canonical" href="https://calvault.app">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://play-lh.googleusercontent.com/Fcr014qRw_RkuqGJK6qFrDNexyIvPqTNODnagf_NMcK6ISYOBMnaSq8uLvU5Cs5G7TWEzwxJqC7XBZohyst3LA=w480-h960-rw">
+    <link rel="apple-touch-icon" href="https://play-lh.googleusercontent.com/Fcr014qRw_RkuqGJK6qFrDNexyIvPqTNODnagf_NMcK6ISYOBMnaSq8uLvU5Cs5G7TWEzwxJqC7XBZohyst3LA=w480-h960-rw">
+    
+    <meta property="og:title" content="CalVault - AI-Powered Calorie Tracker">
+    <meta property="og:description" content="Track calories instantly with AI. Your smart nutrition companion.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://play-lh.googleusercontent.com/Fcr014qRw_RkuqGJK6qFrDNexyIvPqTNODnagf_NMcK6ISYOBMnaSq8uLvU5Cs5G7TWEzwxJqC7XBZohyst3LA=w480-h960-rw">
+    
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav glass-card">
+            <a href="#" class="logo">
+                <img src="https://play-lh.googleusercontent.com/Fcr014qRw_RkuqGJK6qFrDNexyIvPqTNODnagf_NMcK6ISYOBMnaSq8uLvU5Cs5G7TWEzwxJqC7XBZohyst3LA=w480-h960-rw" alt="CalVault" style="width: 40px; height: 40px; border-radius: 8px;">
+                <span class="logo-text">CalVault</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+            </ul>
+
+            <button class="btn btn-hero nav-cta">
+                Get Started
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </button>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <svg id="menuIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                <svg id="closeIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            </button>
+        </nav>
+
+        <div class="mobile-menu glass-card" id="mobileMenu">
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+            </ul>
+            <button class="btn btn-hero">
+                Get Started
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero grid-bg" id="home">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <div class="hero-badge-dot"></div>
+                        <span>AI-Powered Nutrition</span>
+                    </div>
+
+                    <h1>
+                        Track Calories
+                        <br>
+                        <span class="gradient-text">Instantly with AI</span>
+                    </h1>
+
+                    <p style="margin-bottom: 2rem;">Snap a photo of your meal and get instant, accurate nutritional information. Your smart companion for achieving health goals.</p>
+
+                    <div class="hero-buttons">
+                        <button class="btn btn-store store-btn" style="opacity: 0.5; cursor: not-allowed;" disabled>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                            <div class="store-btn-text">
+                                <small>Coming soon</small>
+                                <strong>App Store</strong>
+                            </div>
+                        </button>
+
+                        <a href="https://play.google.com/store/apps/details?id=com.mrfirdavs.calvault" target="_blank" rel="noopener noreferrer" class="btn btn-store store-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.64.79.64 1.18 0 .4-.21.85-.64 1.18l-2.12 1.23-2.5-2.5 2.5-2.5 2.12 1.41zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>
+                            <div class="store-btn-text">
+                                <small>Get it on</small>
+                                <strong>Google Play</strong>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <h3 class="gradient-text">50K+</h3>
+                            <p>Active Users</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="gradient-text">98%</h3>
+                            <p>Accuracy</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="gradient-text">4.9</h3>
+                            <p>App Rating</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-phone">
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <div class="phone-notch"></div>
+                                <div class="phone-image">
+                                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=600&fit=crop" alt="Healthy food plate">
+                                </div>
+                                <div class="phone-overlay"></div>
+                                <div class="scan-line"></div>
+                                <div class="scan-corner top-left"></div>
+                                <div class="scan-corner top-right"></div>
+                                <div class="scan-corner bottom-left"></div>
+                                <div class="scan-corner bottom-right"></div>
+                                <div class="scan-badge glass-card">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/></svg>
+                                    <span>Scanning...</span>
+                                </div>
+                                <div class="phone-info-card glass-card">
+                                    <div class="phone-info-header">
+                                        <span>Detected</span>
+                                        <span>AI Powered</span>
+                                    </div>
+                                    <h3>Garden Salad Bowl</h3>
+                                    <div class="nutrition-grid">
+                                        <div class="nutrition-item">
+                                            <p class="value primary">320</p>
+                                            <p class="label">kcal</p>
+                                        </div>
+                                        <div class="nutrition-item">
+                                            <p class="value secondary">24g</p>
+                                            <p class="label">Protein</p>
+                                        </div>
+                                        <div class="nutrition-item">
+                                            <p class="value accent">12g</p>
+                                            <p class="label">Carbs</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phone-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="blob blob-1"></div>
+
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <div class="section-badge-dot"></div>
+                    <span>Features</span>
+                </div>
+                <h2>
+                    Everything You Need to
+                    <span class="gradient-text">Stay Healthy</span>
+                </h2>
+                <p>Powerful features designed to make nutrition tracking effortless and accurate.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card glass-card">
+                    <div class="feature-icon primary">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+                    </div>
+                    <h3>AI Food Recognition</h3>
+                    <p>Simply snap a photo and our AI instantly identifies your meal with 98% accuracy.</p>
+                </div>
+
+                <div class="feature-card glass-card">
+                    <div class="feature-icon secondary">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 10h.01"/><path d="M12 10h.01"/><path d="M16 10h.01"/></svg>
+                    </div>
+                    <h3>AI Chatbot</h3>
+                    <p>Get instant answers to nutrition questions and personalized advice from our AI assistant.</p>
+                </div>
+
+                <div class="feature-card glass-card">
+                    <div class="feature-icon accent">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+                    </div>
+                    <h3>Detailed Analytics</h3>
+                    <p>Get comprehensive insights into your nutrition patterns and progress.</p>
+                </div>
+
+                <div class="feature-card glass-card">
+                    <div class="feature-icon secondary">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+                    </div>
+                    <h3>Diet Plans</h3>
+                    <p>Personalized meal recommendations based on your goals and preferences.</p>
+                </div>
+
+                <div class="feature-card glass-card">
+                    <div class="feature-icon primary">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 3v18"/><path d="m14 9 3 3-3 3"/></svg>
+                    </div>
+                    <h3>Fridge Meal Suggestion</h3>
+                    <p>Input your fridge ingredients and get smart meal ideas tailored to what you have.</p>
+                </div>
+
+                <div class="feature-card glass-card">
+                    <div class="feature-icon accent">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+                    </div>
+                    <h3>AI Summarizer</h3>
+                    <p>Get weekly summaries of your nutrition journey with actionable insights and tips.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="screenshots" id="screenshots">
+        <div class="blob blob-1"></div>
+
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <div class="section-badge-dot"></div>
+                    <span>App Preview</span>
+                </div>
+                <h2>
+                    See CalVault
+                    <span class="gradient-text">In Action</span>
+                </h2>
+                <p>Explore our beautiful and intuitive interface designed for effortless tracking.</p>
+            </div>
+
+            <div class="screenshots-container">
+                <div class="screenshots-scroll">
+                    <div class="screenshot-card">
+                        <div class="screenshot-image">
+                            <img src="https://play-lh.googleusercontent.com/s_R3S_coHLocV8UL50kdKXI5ybrk84OpMm_i6QIUdpg7T78m4jaHqev0kTZfM1ejkptAvOuyzKWs8lujW2uwPqA=w1052-h592-rw" alt="App intro">
+                            <div class="screenshot-label glass-card">
+                                <span>Intro</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="screenshot-card">
+                        <div class="screenshot-image">
+                            <img src="https://play-lh.googleusercontent.com/iV3cwtNKmdKUguYWuYAyh_O1RbqoMCdr9B1xPKQFvuTTfDj--dwBhWs21TKEmMsWko-RXkTFdZXTJjrWlv3e=w1052-h592-rw" alt="Main page">
+                            <div class="screenshot-label glass-card">
+                                <span>Main page</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="screenshot-card">
+                        <div class="screenshot-image">
+                            <img src="https://play-lh.googleusercontent.com/ZVyM0lvydoTY4fuVXccKJIyzO-ijjbdKm9lAdprKJVRoo0BF-IHLsaizRoPUjq8VrHQMQ_o63VqW7n606Q8uww=w1052-h592-rw" alt="Meal adding">
+                            <div class="screenshot-label glass-card">
+                                <span>Meal adding</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="screenshot-card">
+                        <div class="screenshot-image">
+                            <img src="https://play-lh.googleusercontent.com/JVoXAZTXzPSpqonS0x2980vSr5wrfry1TinEMYtMX6fviUpHj1Jwsteb97SnV5DMAq6OYSn0kaPDN-OjIWPR=w1052-h592-rw" alt="Photo snap">
+                            <div class="screenshot-label glass-card">
+                                <span>Photo snap</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="screenshot-card">
+                        <div class="screenshot-image">
+                            <img src="https://play-lh.googleusercontent.com/ZHZsbZyyZ4o-nPB4_JUURpPxeaYpwEczHaiDabsieoReaVa8__ToFmiwnJbfmp2a9fpNeV3bCeXmLV6iT2j0uw=w1052-h592-rw" alt="Meal details">
+                            <div class="screenshot-label glass-card">
+                                <span>Meal details</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="screenshot-card">
+                        <div class="screenshot-image">
+                            <img src="https://play-lh.googleusercontent.com/bLn-_ud8107v5rimbEve14J_CrzOIwSQmhcE2Cv_5v8BCyvtcoomAoqGawF8T3G2nHiumcim_74ZUADOXT9ucQ=w1052-h592-rw" alt="Analytics">
+                            <div class="screenshot-label glass-card">
+                                <span>Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="screenshot-card">
+                        <div class="screenshot-image">
+                            <img src="https://play-lh.googleusercontent.com/kQX66fpXleTTT9rROj16bH-k-lwEGPQP6wcBsUElc0HRlXzmN7gvLaHUm7tdNfgc1wYqMaQ1ZxKxVaK_L052Qg=w1052-h592-rw" alt="AI Chatbot">
+                            <div class="screenshot-label glass-card">
+                                <span>AI Chatbot</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="screenshots-nav">
+                    <div class="screenshots-dot active"></div>
+                    <div class="screenshots-dot"></div>
+                    <div class="screenshots-dot"></div>
+                    <div class="screenshots-dot"></div>
+                    <div class="screenshots-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="blob blob-1"></div>
+
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <div class="section-badge-dot"></div>
+                    <span>How It Works</span>
+                </div>
+                <h2>
+                    Simple Steps to
+                    <span class="gradient-text">Better Health</span>
+                </h2>
+                <p>Get started in minutes with our intuitive 3-step process.</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card glass-card">
+                    <div class="step-number">1</div>
+                    <h3>Snap a Photo</h3>
+                    <p>Take a quick photo of your meal using your phone's camera.</p>
+                </div>
+
+                <div class="step-card glass-card">
+                    <div class="step-number">2</div>
+                    <h3>AI Analysis</h3>
+                    <p>Our AI instantly identifies ingredients and calculates nutrition.</p>
+                </div>
+
+                <div class="step-card glass-card">
+                    <div class="step-number">3</div>
+                    <h3>Track Progress</h3>
+                    <p>Monitor your daily intake and reach your health goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="blob blob-1"></div>
+
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <div class="section-badge-dot"></div>
+                    <span>Pricing</span>
+                </div>
+                <h2>
+                    Simple, Transparent
+                    <span class="gradient-text">Pricing</span>
+                </h2>
+                <p>Choose the plan that fits your lifestyle. Start free, upgrade anytime.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card glass-card">
+                    <div class="pricing-header">
+                        <h3>Free</h3>
+                        <div class="pricing-price">
+                            <span class="currency">$</span>
+                            <span class="amount">0</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>5 scans limit</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Basic nutrition tracking</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>7-day history</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Community support</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-glass">Get Started</button>
+                </div>
+
+                <div class="pricing-card glass-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Pro</h3>
+                        <div class="pricing-price">
+                            <span class="currency">$</span>
+                            <span class="amount">9</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Unlimited scans</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Extra food details</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Advanced analytics</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Personalized meal plans</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Priority support</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>AI Summarizer</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>AI Chatbot</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-hero">Start Free Trial</button>
+                </div>
+
+                <div class="pricing-card glass-card">
+                    <div class="pricing-header">
+                        <h3>Annual</h3>
+                        <div class="pricing-price">
+                            <span class="currency">$</span>
+                            <span class="amount">99</span>
+                            <span class="period">/year</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Unlimited scans</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Extra food details</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Advanced analytics</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Personalized meal plans</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Priority support</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>AI Summarizer</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>AI Chatbot</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-glass">Get Annual</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="blob blob-1"></div>
+
+        <div class="container">
+            <div class="cta-card glass-card">
+                <div class="cta-badge">
+                    <div class="cta-badge-dot"></div>
+                    <span>Free to Download</span>
+                </div>
+
+                <h2>
+                    Ready to Transform<br>
+                    <span class="gradient-text">Your Nutrition Journey?</span>
+                </h2>
+
+                <p class="cta-description">Join over 50,000 users who are already achieving their health goals with CalVault. Download now and start your free trial today.</p>
+
+                <div class="cta-buttons">
+                    <button class="btn btn-store store-btn" style="opacity: 0.5; cursor: not-allowed;" disabled>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                        <div class="store-btn-text">
+                            <small>Coming soon</small>
+                            <strong>App Store</strong>
+                        </div>
+                    </button>
+
+                    <a href="https://play.google.com/store/apps/details?id=com.mrfirdavs.calvault" target="_blank" rel="noopener noreferrer" class="btn btn-store store-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.64.79.64 1.18 0 .4-.21.85-.64 1.18l-2.12 1.23-2.5-2.5 2.5-2.5 2.12 1.41zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>
+                        <div class="store-btn-text">
+                            <small>Get it on</small>
+                            <strong>Google Play</strong>
+                        </div>
+                    </a>
+                </div>
+
+                <a href="#features" class="cta-link">
+                    Learn more about features
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2026 CalVault. All rights reserved.</p>
+                <div style="display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; justify-content: center;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="mailto:support@calvault.app">support@calvault.app</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="style.js"></script>
+</body>
+</html>

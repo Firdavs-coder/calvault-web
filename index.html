@@ -1,575 +1,474 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CalVault - AI-Powered Calorie Tracker | Smart Nutrition App</title>
-    <meta name="description" content="Track calories instantly with AI. Snap a photo of your meal and get instant nutritional insights. Download CalVault - your smart nutrition companion.">
-    <meta name="keywords" content="calorie tracker, nutrition app, AI food scanner, diet app, meal tracking, health app">
-    <meta name="author" content="CalVault">
-    <link rel="canonical" href="https://calvault.app">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://play-lh.googleusercontent.com/Fcr014qRw_RkuqGJK6qFrDNexyIvPqTNODnagf_NMcK6ISYOBMnaSq8uLvU5Cs5G7TWEzwxJqC7XBZohyst3LA=w480-h960-rw">
-    <link rel="apple-touch-icon" href="https://play-lh.googleusercontent.com/Fcr014qRw_RkuqGJK6qFrDNexyIvPqTNODnagf_NMcK6ISYOBMnaSq8uLvU5Cs5G7TWEzwxJqC7XBZohyst3LA=w480-h960-rw">
-    
-    <meta property="og:title" content="CalVault - AI-Powered Calorie Tracker">
-    <meta property="og:description" content="Track calories instantly with AI. Your smart nutrition companion.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://play-lh.googleusercontent.com/Fcr014qRw_RkuqGJK6qFrDNexyIvPqTNODnagf_NMcK6ISYOBMnaSq8uLvU5Cs5G7TWEzwxJqC7XBZohyst3LA=w480-h960-rw">
-    
-    <link rel="stylesheet" href="main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CalVault — AI Calorie Tracker: Snap a Photo, Get the Macros</title>
+  <meta name="description" content="CalVault estimates calories, protein, carbs and fat from a photo of your meal. Ask a nutrition AI what to eat, get meal ideas from your fridge, and track weight and BMI. No account needed — your log stays on your phone.">
+  <link rel="canonical" href="https://calvault.app/">
+  <meta name="theme-color" content="#f6faf6">
 
-    <script defer data-website-id="696v3k585l6f0e69" src="https://analytics.mrfirdavs.uz/js/script.js"></script>
-    
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CalVault">
+  <meta property="og:title" content="CalVault — Snap a photo, get the macros">
+  <meta property="og:description" content="AI calorie and macro tracking from a photo. No account needed — your food log stays on your phone.">
+  <meta property="og:url" content="https://calvault.app/">
+  <meta property="og:image" content="https://calvault.app/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+
+  <script>document.documentElement.classList.remove('no-js');</script>
+  <script defer data-website-id="696v3k585l6f0e69" src="https://analytics.mrfirdavs.uz/js/script.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "CalVault",
+    "operatingSystem": "Android",
+    "applicationCategory": "HealthApplication",
+    "description": "AI calorie and macro tracker. Snap a photo of your meal to estimate calories, protein, carbs and fat.",
+    "url": "https://calvault.app/",
+    "downloadUrl": "https://play.google.com/store/apps/details?id=com.mrfirdavs.calvault",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav glass-card">
-            <a href="#" class="logo">
-                <img src="https://play-lh.googleusercontent.com/Fcr014qRw_RkuqGJK6qFrDNexyIvPqTNODnagf_NMcK6ISYOBMnaSq8uLvU5Cs5G7TWEzwxJqC7XBZohyst3LA=w480-h960-rw" alt="CalVault" style="width: 40px; height: 40px; border-radius: 8px;">
-                <span class="logo-text">CalVault</span>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ Header ============ -->
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a href="#top" class="brand" aria-label="CalVault home">
+        <img src="assets/logo.png" alt="" width="36" height="36">
+        CalVault
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#privacy">Privacy</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <a class="btn btn-primary btn-sm nav-cta" href="https://play.google.com/store/apps/details?id=com.mrfirdavs.calvault" target="_blank" rel="noopener">Get the app</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#privacy">Privacy</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.mrfirdavs.calvault" target="_blank" rel="noopener">Get it on Google Play</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ Hero ============ -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">AI calorie &amp; macro tracker</span>
+          <h1>Snap your meal.<br>Know your <span class="accent">macros.</span></h1>
+          <p class="hero-lede">Take a photo and CalVault estimates the calories, protein, carbs and fat in seconds. Then ask the nutrition AI what to eat next, and see your week add up.</p>
+
+          <div class="store-row">
+            <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.mrfirdavs.calvault" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.64.79.64 1.18 0 .4-.21.85-.64 1.18l-2.12 1.23-2.5-2.5 2.5-2.5 2.12 1.41zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>
+              <span><small>GET IT ON</small><strong>Google Play</strong></span>
             </a>
+            <span class="store-btn is-soon" aria-label="App Store — coming soon">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              <span><small>COMING SOON</small><strong>App Store</strong></span>
+            </span>
+          </div>
 
-            <ul class="nav-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-            </ul>
+          <ul class="trust-row">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Free to download</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>No sign-up</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Your log stays on your phone</li>
+          </ul>
+        </div>
 
-            <button class="btn btn-hero nav-cta">
-                Get Started
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            </button>
+        <div class="hero-devices">
+          <img class="shot" src="assets/screens/activity.webp" alt="CalVault home screen with today's meals and activity" width="640" height="1385">
+          <img class="shot" src="assets/screens/camera.webp" alt="CalVault camera scanning a meal" width="640" height="1385">
+        </div>
+      </div>
+    </section>
 
-            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
-                <svg id="menuIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
-                <svg id="closeIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-            </button>
-        </nav>
+    <!-- ============ Facts ============ -->
+    <section aria-label="CalVault at a glance">
+      <div class="container">
+        <div class="facts-grid reveal">
+          <div class="fact"><b>1 photo</b><span>is all it takes to log a meal</span></div>
+          <div class="fact"><b>0 accounts</b><span>no email, no password, no sign-in</span></div>
+          <div class="fact"><b>On-device</b><span>meals, weight &amp; profile stored locally</span></div>
+          <div class="fact"><b>5 free</b><span>AI photo logs to try it before you pay</span></div>
+        </div>
+      </div>
+    </section>
 
-        <div class="mobile-menu glass-card" id="mobileMenu">
+    <!-- ============ Features ============ -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Features</span>
+          <h2>Everything you need to eat on target.</h2>
+          <p>Log a meal with one photo, check what's left for the day, and get a clear answer when you're not sure what to eat.</p>
+        </div>
+        <div class="feature-rows">
+          <article class="card feature-row reveal">
+            <div class="feature-copy">
+              <span class="eyebrow">Photo logging</span>
+              <h3>Point, shoot, logged.</h3>
+              <p>Take a photo or pick one from your gallery. The AI names the dish and estimates calories, protein, carbs and fat. Review the result, adjust it if needed, and save it to breakfast, lunch, dinner or a snack.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Re-add meals you've logged before with one tap</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Detailed nutrient view for every meal, including vitamins and minerals</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Logged meals stay available offline</li>
+              </ul>
+            </div>
+            <div class="feature-media"><img class="shot" src="assets/screens/camera.webp" alt="Camera scanning a salad" width="640" height="1385" loading="lazy"></div>
+          </article>
+
+          <article class="card feature-row reveal">
+            <div class="feature-copy">
+              <span class="eyebrow">Nutrition AI</span>
+              <h3>An assistant that knows today's numbers.</h3>
+              <p>Ask how much you can still eat, or what would get you 40g of protein. The assistant sees what you've logged today and your goals, so the answer fits your day. You can attach a photo too.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Answers based on your remaining calories and macros</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Ask about any food, meal or nutrition topic</li>
+              </ul>
+            </div>
+            <div class="feature-media"><img class="shot" src="assets/screens/chat.webp" alt="Nutrition AI chat answering how many calories are left" width="640" height="1385" loading="lazy"></div>
+          </article>
+
+          <article class="card feature-row reveal">
+            <div class="feature-copy">
+              <span class="eyebrow">What to eat?</span>
+              <h3>Meal ideas from what's in your fridge.</h3>
+              <p>Take a photo of your fridge or pantry. CalVault identifies the ingredients and suggests meals with macros and simple instructions. Add any suggestion straight to your log.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Suggestions for breakfast, lunch, dinner and snacks</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Each idea shows calories, protein, carbs and fat</li>
+              </ul>
+            </div>
+            <div class="feature-media"><img class="shot" src="assets/screens/fridge.webp" alt="Meal suggestions generated from a fridge photo" width="640" height="1385" loading="lazy"></div>
+          </article>
+
+          <article class="card feature-row reveal">
+            <div class="feature-copy">
+              <span class="eyebrow">Analytics</span>
+              <h3>See your week, not just today.</h3>
+              <p>Weekly calorie intake alongside separate protein, carbohydrate and fat charts, so you can spot patterns at a glance.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Daily and weekly intake trends</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Weight progress chart over time</li>
+              </ul>
+            </div>
+            <div class="feature-media"><img class="shot" src="assets/screens/analytics.webp" alt="Weekly calorie and protein charts" width="640" height="1385" loading="lazy"></div>
+          </article>
+
+          <article class="card feature-row reveal">
+            <div class="feature-copy">
+              <span class="eyebrow">Weight & BMI</span>
+              <h3>Track your weight against your goal.</h3>
+              <p>Set a goal weight, log your current weight weekly and see your BMI with a clear category scale.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Goal weight and progress</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>BMI with healthy-range indicator</li>
+              </ul>
+            </div>
+            <div class="feature-media"><img class="shot" src="assets/screens/profile.webp" alt="Weight goal, current weight and BMI" width="640" height="1385" loading="lazy"></div>
+          </article>
+        </div>
+        <div class="mini-grid">
+          <article class="card mini reveal">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7c-3 3.4-6 6.9-6 10.3a6 6 0 0 0 12 0c0-3.4-3-6.9-6-10.3z"/></svg></div>
+            <h3>Daily activity</h3>
+            <p>Log water, sleep and active minutes alongside your meals.</p>
+          </article>
+          <article class="card mini reveal">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10M18 20V4M6 20v-4"/></svg></div>
+            <h3>A plan built for you</h3>
+            <p>Daily calorie and macro targets from your age, height, weight, goal and activity level.</p>
+          </article>
+          <article class="card mini reveal">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+            <h3>History at a glance</h3>
+            <p>An activity calendar shows the days you logged. Tap a day to see what you ate.</p>
+          </article>
+          <article class="card mini reveal">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h3l3-9 4 18 3-9h7"/></svg></div>
+            <h3>Works offline</h3>
+            <p>Your log, charts and history open without a connection. Only AI features need internet.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Screens ============ -->
+    <section class="section" id="screens">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Inside the app</span>
+          <h2>A clean, focused interface.</h2>
+          <p>No clutter and no ads. Your day, your numbers and a camera button.</p>
+        </div>
+        <div class="slideshow">
+          <div class="slides" id="slides" tabindex="0" aria-label="App screenshots">
+            <img class="slide" src="assets/screens/meals.webp" alt="Track your meals daily" width="640" height="1385" loading="lazy">
+            <img class="slide" src="assets/screens/camera.webp" alt="Take a photo of the meal" width="640" height="1385" loading="lazy">
+            <img class="slide" src="assets/screens/add-meal.webp" alt="Add items for each meal" width="640" height="1385" loading="lazy">
+            <img class="slide" src="assets/screens/activity.webp" alt="Track water, sleep and active time" width="640" height="1385" loading="lazy">
+            <img class="slide" src="assets/screens/analytics.webp" alt="Separate charts for each nutrient" width="640" height="1385" loading="lazy">
+            <img class="slide" src="assets/screens/weight.webp" alt="Analyze weight and history" width="640" height="1385" loading="lazy">
+            <img class="slide" src="assets/screens/chat.webp" alt="Chat with Nutrition AI" width="640" height="1385" loading="lazy">
+            <img class="slide" src="assets/screens/fridge.webp" alt="Get suggestions based on your fridge" width="640" height="1385" loading="lazy">
+            <img class="slide" src="assets/screens/profile.webp" alt="Calculate your BMI" width="640" height="1385" loading="lazy">
+          </div>
+          <div class="slide-controls">
+            <button class="icon-btn" id="slidePrev" aria-label="Previous screenshot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+            <div class="slide-dots" id="slideDots"></div>
+            <button class="icon-btn" id="slideNext" aria-label="Next screenshot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ How it works ============ -->
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">How it works</span>
+          <h2>Up and running in under a minute.</h2>
+        </div>
+        <div class="steps">
+          <div class="card step reveal">
+            <div class="num">1</div>
+            <h3>Tell it about you</h3>
+            <p>Your name, age, height, weight, goal weight and how active you are. That's the whole setup.</p>
+            <div class="detail">CalVault works out your daily calories, protein, carbs and fat.</div>
+          </div>
+          <div class="card step reveal">
+            <div class="num">2</div>
+            <h3>Snap what you eat</h3>
+            <p>Photo, gallery, or re-add a meal you've logged before. The AI fills in the numbers.</p>
+            <div class="detail">You review the estimate before it's saved.</div>
+          </div>
+          <div class="card step reveal">
+            <div class="num">3</div>
+            <h3>Watch it add up</h3>
+            <p>See what's left today, check your weekly charts, and ask the AI when you're stuck.</p>
+            <div class="detail">Log your weight weekly to keep your plan on track.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Privacy ============ -->
+    <section class="section" id="privacy">
+      <div class="container">
+        <div class="privacy-band reveal">
+          <div style="position: relative; z-index: 1;">
+            <span class="eyebrow">Private by design</span>
+            <h2>Your food log stays on your phone.</h2>
+            <p>There's no CalVault account and no cloud copy of your diary. We don't run ads or trackers in the app. A photo or question only leaves your device when you ask the AI to analyze it.</p>
+            <a class="btn" href="privacy/">Read the privacy policy</a>
+          </div>
+          <ul class="privacy-points">
+            <li>
+              <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/><path d="m2 2 20 20"/></svg></span>
+              <div><b>No sign-up, ever</b><span>No email, password or Google sign-in required.</span></div>
+            </li>
+            <li>
+              <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></span>
+              <div><b>Stored on your device</b><span>Meals, photos, weight and profile are kept in local app storage.</span></div>
+            </li>
+            <li>
+              <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+              <div><b>No ads, no tracking SDKs</b><span>Nothing in the app profiles you for advertising.</span></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Pricing ============ -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Pricing</span>
+          <h2>Start free. Upgrade when it sticks.</h2>
+          <p>Most of CalVault is free. Premium removes the photo limit for people who log every day.</p>
+        </div>
+
+        <div class="toggle-center">
+          <div class="billing-toggle" role="group" aria-label="Billing period">
+            <button type="button" data-period="monthly" aria-pressed="false">Monthly</button>
+            <button type="button" data-period="yearly" aria-pressed="true">Yearly <span class="save">Save 17%</span></button>
+          </div>
+        </div>
+
+        <div class="plans">
+          <div class="card plan reveal">
+            <h3>Free</h3>
+            <p class="desc">Everything you need to start tracking.</p>
+            <div class="price"><b>$0</b><span>forever</span></div>
+            <p class="price-note">No card required</p>
             <ul>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#pricing">Pricing</a></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>5 AI photo meal logs</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Calories &amp; macro tracking</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Nutrition AI chat</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Fridge meal ideas</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Weekly charts, weight &amp; BMI</li>
             </ul>
-            <button class="btn btn-hero">
-                Get Started
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            </button>
+            <a class="btn btn-ghost" href="https://play.google.com/store/apps/details?id=com.mrfirdavs.calvault" target="_blank" rel="noopener">Download free</a>
+          </div>
+
+          <div class="card plan featured reveal">
+            <h3>Premium <span class="badge" id="planBadge">Best value</span></h3>
+            <p class="desc">For daily trackers who want the full picture.</p>
+            <div class="price"><b id="planPrice">$99.99</b><span id="planPeriod">/ year</span></div>
+            <p class="price-note" id="planNote">That's about $8.33 a month</p>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Unlimited</strong> AI photo meal logs</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Detailed nutrition info</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Advanced analytics</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Personalized meal suggestions</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Priority support</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Everything in Free</li>
+            </ul>
+            <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.mrfirdavs.calvault" target="_blank" rel="noopener">Get Premium on Google Play</a>
+          </div>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero grid-bg" id="home">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <div class="hero-badge">
-                        <div class="hero-badge-dot"></div>
-                        <span>AI-Powered Nutrition</span>
-                    </div>
-
-                    <h1>
-                        Track Calories
-                        <br>
-                        <span class="gradient-text">Instantly with AI</span>
-                    </h1>
-
-                    <p style="margin-bottom: 2rem;">Snap a photo of your meal and get instant, accurate nutritional information. Your smart companion for achieving health goals.</p>
-
-                    <div class="hero-buttons">
-                        <button class="btn btn-store store-btn" style="opacity: 0.5; cursor: not-allowed;" disabled>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                            <div class="store-btn-text">
-                                <small>Coming soon</small>
-                                <strong>App Store</strong>
-                            </div>
-                        </button>
-
-                        <a href="https://play.google.com/store/apps/details?id=com.mrfirdavs.calvault" target="_blank" rel="noopener noreferrer" class="btn btn-store store-btn">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.64.79.64 1.18 0 .4-.21.85-.64 1.18l-2.12 1.23-2.5-2.5 2.5-2.5 2.12 1.41zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>
-                            <div class="store-btn-text">
-                                <small>Get it on</small>
-                                <strong>Google Play</strong>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="hero-stats">
-                        <div class="stat">
-                            <h3 class="gradient-text">50K+</h3>
-                            <p>Active Users</p>
-                        </div>
-                        <div class="stat">
-                            <h3 class="gradient-text">98%</h3>
-                            <p>Accuracy</p>
-                        </div>
-                        <div class="stat">
-                            <h3 class="gradient-text">4.9</h3>
-                            <p>App Rating</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="hero-phone">
-                    <div class="phone-mockup">
-                        <div class="phone-frame">
-                            <div class="phone-screen">
-                                <div class="phone-notch"></div>
-                                <div class="phone-image">
-                                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=600&fit=crop" alt="Healthy food plate">
-                                </div>
-                                <div class="phone-overlay"></div>
-                                <div class="scan-line"></div>
-                                <div class="scan-corner top-left"></div>
-                                <div class="scan-corner top-right"></div>
-                                <div class="scan-corner bottom-left"></div>
-                                <div class="scan-corner bottom-right"></div>
-                                <div class="scan-badge glass-card">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/></svg>
-                                    <span>Scanning...</span>
-                                </div>
-                                <div class="phone-info-card glass-card">
-                                    <div class="phone-info-header">
-                                        <span>Detected</span>
-                                        <span>AI Powered</span>
-                                    </div>
-                                    <h3>Garden Salad Bowl</h3>
-                                    <div class="nutrition-grid">
-                                        <div class="nutrition-item">
-                                            <p class="value primary">320</p>
-                                            <p class="label">kcal</p>
-                                        </div>
-                                        <div class="nutrition-item">
-                                            <p class="value secondary">24g</p>
-                                            <p class="label">Protein</p>
-                                        </div>
-                                        <div class="nutrition-item">
-                                            <p class="value accent">12g</p>
-                                            <p class="label">Carbs</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="phone-glow"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <p class="pricing-foot">Prices shown in USD. The app shows your local price from Google Play.<br>Subscriptions renew automatically. Cancel any time in Google Play → Subscriptions.</p>
+      </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features" id="features">
-        <div class="blob blob-1"></div>
-
-        <div class="container">
-            <div class="section-header">
-                <div class="section-badge">
-                    <div class="section-badge-dot"></div>
-                    <span>Features</span>
-                </div>
-                <h2>
-                    Everything You Need to
-                    <span class="gradient-text">Stay Healthy</span>
-                </h2>
-                <p>Powerful features designed to make nutrition tracking effortless and accurate.</p>
-            </div>
-
-            <div class="features-grid">
-                <div class="feature-card glass-card">
-                    <div class="feature-icon primary">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
-                    </div>
-                    <h3>AI Food Recognition</h3>
-                    <p>Simply snap a photo and our AI instantly identifies your meal with 98% accuracy.</p>
-                </div>
-
-                <div class="feature-card glass-card">
-                    <div class="feature-icon secondary">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 10h.01"/><path d="M12 10h.01"/><path d="M16 10h.01"/></svg>
-                    </div>
-                    <h3>AI Chatbot</h3>
-                    <p>Get instant answers to nutrition questions and personalized advice from our AI assistant.</p>
-                </div>
-
-                <div class="feature-card glass-card">
-                    <div class="feature-icon accent">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
-                    </div>
-                    <h3>Detailed Analytics</h3>
-                    <p>Get comprehensive insights into your nutrition patterns and progress.</p>
-                </div>
-
-                <div class="feature-card glass-card">
-                    <div class="feature-icon secondary">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
-                    </div>
-                    <h3>Diet Plans</h3>
-                    <p>Personalized meal recommendations based on your goals and preferences.</p>
-                </div>
-
-                <div class="feature-card glass-card">
-                    <div class="feature-icon primary">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 3v18"/><path d="m14 9 3 3-3 3"/></svg>
-                    </div>
-                    <h3>Fridge Meal Suggestion</h3>
-                    <p>Input your fridge ingredients and get smart meal ideas tailored to what you have.</p>
-                </div>
-
-                <div class="feature-card glass-card">
-                    <div class="feature-icon accent">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
-                    </div>
-                    <h3>AI Summarizer</h3>
-                    <p>Get weekly summaries of your nutrition journey with actionable insights and tips.</p>
-                </div>
-            </div>
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq">
+      <div class="container faq-grid">
+        <div class="section-head">
+          <span class="eyebrow">FAQ</span>
+          <h2>Questions, answered.</h2>
+          <p>Can't find what you need? Email <a href="mailto:support@calvault.app">support@calvault.app</a>.</p>
         </div>
+        <div class="faq-list">
+          <details open>
+            <summary>How accurate are the calorie estimates?</summary>
+            <p>They're AI estimates from a photo, so they're a good starting point, not a lab measurement. Portion size and hidden ingredients like oil or sauces are the hardest parts. You can review and edit every result before you save it.</p>
+          </details>
+          <details>
+            <summary>Do I need to create an account?</summary>
+            <p>No. Open the app, answer a few setup questions and start logging. There's no email, password or social sign-in.</p>
+          </details>
+          <details>
+            <summary>Where is my data stored?</summary>
+            <p>On your phone, in the app's local storage. We don't keep a copy of your food diary on our servers. When you use an AI feature, that photo or question is sent to our AI provider to be analyzed. The <a href="privacy/">privacy policy</a> has the details.</p>
+          </details>
+          <details>
+            <summary>What happens after the 5 free photo logs?</summary>
+            <p>You can keep using the rest of the app for free, including re-adding meals you've already logged, charts, weight tracking, the AI chat and fridge ideas. To keep logging new meals by photo, upgrade to Premium.</p>
+          </details>
+          <details>
+            <summary>How do I cancel or restore Premium?</summary>
+            <p>Subscriptions are handled by Google Play. Cancel any time in the Play Store app under Profile → Payments &amp; subscriptions → Subscriptions. On a new phone, sign in to the same Google account and tap <em>Restore Purchases</em> in CalVault.</p>
+          </details>
+          <details>
+            <summary>If I switch phones, does my history come with me?</summary>
+            <p>Not yet. Because your data lives only on your device, a new phone starts fresh. Your Premium subscription moves with your Google account.</p>
+          </details>
+          <details>
+            <summary>Is CalVault on iPhone?</summary>
+            <p>CalVault is available on Android today. The iOS version is on the way.</p>
+          </details>
+          <details>
+            <summary>Is this medical advice?</summary>
+            <p>No. CalVault is a tracking tool for general wellness. Talk to a doctor or registered dietitian before major diet changes, especially if you have a medical condition, are pregnant, or have a history of disordered eating.</p>
+          </details>
+        </div>
+      </div>
     </section>
 
-    <!-- Screenshots Section -->
-    <section class="screenshots" id="screenshots">
-        <div class="blob blob-1"></div>
-
-        <div class="container">
-            <div class="section-header">
-                <div class="section-badge">
-                    <div class="section-badge-dot"></div>
-                    <span>App Preview</span>
-                </div>
-                <h2>
-                    See CalVault
-                    <span class="gradient-text">In Action</span>
-                </h2>
-                <p>Explore our beautiful and intuitive interface designed for effortless tracking.</p>
-            </div>
-
-            <div class="screenshots-container">
-                <div class="screenshots-scroll">
-                    <div class="screenshot-card">
-                        <div class="screenshot-image">
-                            <img src="https://play-lh.googleusercontent.com/s_R3S_coHLocV8UL50kdKXI5ybrk84OpMm_i6QIUdpg7T78m4jaHqev0kTZfM1ejkptAvOuyzKWs8lujW2uwPqA=w1052-h592-rw" alt="App intro">
-                            <div class="screenshot-label glass-card">
-                                <span>Intro</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="screenshot-card">
-                        <div class="screenshot-image">
-                            <img src="https://play-lh.googleusercontent.com/iV3cwtNKmdKUguYWuYAyh_O1RbqoMCdr9B1xPKQFvuTTfDj--dwBhWs21TKEmMsWko-RXkTFdZXTJjrWlv3e=w1052-h592-rw" alt="Main page">
-                            <div class="screenshot-label glass-card">
-                                <span>Main page</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="screenshot-card">
-                        <div class="screenshot-image">
-                            <img src="https://play-lh.googleusercontent.com/ZVyM0lvydoTY4fuVXccKJIyzO-ijjbdKm9lAdprKJVRoo0BF-IHLsaizRoPUjq8VrHQMQ_o63VqW7n606Q8uww=w1052-h592-rw" alt="Meal adding">
-                            <div class="screenshot-label glass-card">
-                                <span>Meal adding</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="screenshot-card">
-                        <div class="screenshot-image">
-                            <img src="https://play-lh.googleusercontent.com/JVoXAZTXzPSpqonS0x2980vSr5wrfry1TinEMYtMX6fviUpHj1Jwsteb97SnV5DMAq6OYSn0kaPDN-OjIWPR=w1052-h592-rw" alt="Photo snap">
-                            <div class="screenshot-label glass-card">
-                                <span>Photo snap</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="screenshot-card">
-                        <div class="screenshot-image">
-                            <img src="https://play-lh.googleusercontent.com/ZHZsbZyyZ4o-nPB4_JUURpPxeaYpwEczHaiDabsieoReaVa8__ToFmiwnJbfmp2a9fpNeV3bCeXmLV6iT2j0uw=w1052-h592-rw" alt="Meal details">
-                            <div class="screenshot-label glass-card">
-                                <span>Meal details</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="screenshot-card">
-                        <div class="screenshot-image">
-                            <img src="https://play-lh.googleusercontent.com/bLn-_ud8107v5rimbEve14J_CrzOIwSQmhcE2Cv_5v8BCyvtcoomAoqGawF8T3G2nHiumcim_74ZUADOXT9ucQ=w1052-h592-rw" alt="Analytics">
-                            <div class="screenshot-label glass-card">
-                                <span>Analytics</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="screenshot-card">
-                        <div class="screenshot-image">
-                            <img src="https://play-lh.googleusercontent.com/kQX66fpXleTTT9rROj16bH-k-lwEGPQP6wcBsUElc0HRlXzmN7gvLaHUm7tdNfgc1wYqMaQ1ZxKxVaK_L052Qg=w1052-h592-rw" alt="AI Chatbot">
-                            <div class="screenshot-label glass-card">
-                                <span>AI Chatbot</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="screenshots-nav">
-                    <div class="screenshots-dot active"></div>
-                    <div class="screenshots-dot"></div>
-                    <div class="screenshots-dot"></div>
-                    <div class="screenshots-dot"></div>
-                    <div class="screenshots-dot"></div>
-                </div>
-            </div>
+    <!-- ============ CTA ============ -->
+    <section aria-label="Download">
+      <div class="container">
+        <div class="cta-card reveal">
+          <img src="assets/logo.png" alt="" width="72" height="72">
+          <h2>Start tracking with your next meal.</h2>
+          <p>Download CalVault free and log your first meal in seconds.</p>
+          <div class="store-row">
+            <a class="store-btn on-dark" href="https://play.google.com/store/apps/details?id=com.mrfirdavs.calvault" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.64.79.64 1.18 0 .4-.21.85-.64 1.18l-2.12 1.23-2.5-2.5 2.5-2.5 2.12 1.41zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>
+              <span><small>GET IT ON</small><strong>Google Play</strong></span>
+            </a>
+            <span class="store-btn on-dark is-soon" aria-label="App Store — coming soon">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              <span><small>COMING SOON</small><strong>App Store</strong></span>
+            </span>
+          </div>
         </div>
+      </div>
     </section>
+  </main>
 
-    <!-- How It Works Section -->
-    <section class="how-it-works" id="how-it-works">
-        <div class="blob blob-1"></div>
-
-        <div class="container">
-            <div class="section-header">
-                <div class="section-badge">
-                    <div class="section-badge-dot"></div>
-                    <span>How It Works</span>
-                </div>
-                <h2>
-                    Simple Steps to
-                    <span class="gradient-text">Better Health</span>
-                </h2>
-                <p>Get started in minutes with our intuitive 3-step process.</p>
-            </div>
-
-            <div class="steps-grid">
-                <div class="step-card glass-card">
-                    <div class="step-number">1</div>
-                    <h3>Snap a Photo</h3>
-                    <p>Take a quick photo of your meal using your phone's camera.</p>
-                </div>
-
-                <div class="step-card glass-card">
-                    <div class="step-number">2</div>
-                    <h3>AI Analysis</h3>
-                    <p>Our AI instantly identifies ingredients and calculates nutrition.</p>
-                </div>
-
-                <div class="step-card glass-card">
-                    <div class="step-number">3</div>
-                    <h3>Track Progress</h3>
-                    <p>Monitor your daily intake and reach your health goals.</p>
-                </div>
-            </div>
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#top" class="brand"><img src="assets/logo.png" alt="" width="36" height="36">CalVault</a>
+          <p>AI calorie and macro tracking from a photo. No account, and your log stays on your phone.</p>
         </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section class="pricing" id="pricing">
-        <div class="blob blob-1"></div>
-
-        <div class="container">
-            <div class="section-header">
-                <div class="section-badge">
-                    <div class="section-badge-dot"></div>
-                    <span>Pricing</span>
-                </div>
-                <h2>
-                    Simple, Transparent
-                    <span class="gradient-text">Pricing</span>
-                </h2>
-                <p>Choose the plan that fits your lifestyle. Start free, upgrade anytime.</p>
-            </div>
-
-            <div class="pricing-grid">
-                <div class="pricing-card glass-card">
-                    <div class="pricing-header">
-                        <h3>Free</h3>
-                        <div class="pricing-price">
-                            <span class="currency">$</span>
-                            <span class="amount">0</span>
-                            <span class="period">/month</span>
-                        </div>
-                    </div>
-                    <div class="pricing-features">
-                        <ul>
-                            <li>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                                <span>5 scans limit</span>
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                                <span>Basic nutrition tracking</span>
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                                <span>7-day history</span>
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                                <span>Community support</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <button class="btn btn-glass">Get Started</button>
-                </div>
-
-                <div class="pricing-card glass-card featured">
-                    <div class="pricing-badge">Most Popular</div>
-                    <div class="pricing-header">
-                        <h3>Pro</h3>
-                        <div class="pricing-price">
-                            <span class="currency">$</span>
-                            <span class="amount">9</span>
-                            <span class="period">/month</span>
-                        </div>
-                    </div>
-                    <div class="pricing-features">
-                        <ul>
-                            <li>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                                <span>Unlimited scans</span>
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                                <span>Extra food details</span>
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                                <span>Advanced analytics</span>
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                                <span>Personalized meal plans</span>
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                                <span>Priority support</span>
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                                <span>AI Summarizer</span>
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                                <span>AI Chatbot</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <button class="btn btn-hero">Start Free Trial</button>
-                </div>
-
-                <div class="pricing-card glass-card">
-                    <div class="pricing-header">
-                        <h3>Annual</h3>
-                        <div class="pricing-price">
-                            <span class="currency">$</span>
-                            <span class="amount">99</span>
-                            <span class="period">/year</span>
-                        </div>
-                    </div>
-                    <div class="pricing-features">
-                        <ul>
-                            <li>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                                <span>Unlimited scans</span>
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                                <span>Extra food details</span>
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                                <span>Advanced analytics</span>
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                                <span>Personalized meal plans</span>
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                                <span>Priority support</span>
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                                <span>AI Summarizer</span>
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                                <span>AI Chatbot</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <button class="btn btn-glass">Get Annual</button>
-                </div>
-            </div>
+        <div>
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.mrfirdavs.calvault" target="_blank" rel="noopener">Google Play</a></li>
+          </ul>
         </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="blob blob-1"></div>
-
-        <div class="container">
-            <div class="cta-card glass-card">
-                <div class="cta-badge">
-                    <div class="cta-badge-dot"></div>
-                    <span>Free to Download</span>
-                </div>
-
-                <h2>
-                    Ready to Transform<br>
-                    <span class="gradient-text">Your Nutrition Journey?</span>
-                </h2>
-
-                <p class="cta-description">Join over 50,000 users who are already achieving their health goals with CalVault. Download now and start your free trial today.</p>
-
-                <div class="cta-buttons">
-                    <button class="btn btn-store store-btn" style="opacity: 0.5; cursor: not-allowed;" disabled>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                        <div class="store-btn-text">
-                            <small>Coming soon</small>
-                            <strong>App Store</strong>
-                        </div>
-                    </button>
-
-                    <a href="https://play.google.com/store/apps/details?id=com.mrfirdavs.calvault" target="_blank" rel="noopener noreferrer" class="btn btn-store store-btn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.64.79.64 1.18 0 .4-.21.85-.64 1.18l-2.12 1.23-2.5-2.5 2.5-2.5 2.12 1.41zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>
-                        <div class="store-btn-text">
-                            <small>Get it on</small>
-                            <strong>Google Play</strong>
-                        </div>
-                    </a>
-                </div>
-
-                <a href="#features" class="cta-link">
-                    Learn more about features
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-                </a>
-            </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy/">Privacy Policy</a></li>
+            <li><a href="terms/">Terms of Use</a></li>
+            <li><a href="privacy/#delete">Delete your data</a></li>
+          </ul>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-bottom">
-                <p>© 2026 CalVault. All rights reserved.</p>
-                <div style="display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; justify-content: center;">
-                    <a href="#">Privacy Policy</a>
-                    <a href="mailto:support@calvault.app">support@calvault.app</a>
-                </div>
-            </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:support@calvault.app">support@calvault.app</a></li>
+          </ul>
         </div>
-    </footer>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> CalVault. All rights reserved.</span>
+        <span>Nutrition estimates are for general wellness, not medical advice.</span>
+      </div>
+    </div>
+  </footer>
 
-    <script src="style.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
